@@ -58,12 +58,18 @@
 								</div>
 								<div class="container">
 									<!-- social media share buttons -->
-									<ul class="icons">
-										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon brands fa-linkedin"><span class="label">LInkedIn</span></a></li>
-										<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+										<li><a href="http://twitter.com/" onclick="window.location = 'http://twitter.com/home/?status=' + encodeURIComponent(window.location); return false" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="http://www.facebook.com/" onclick="window.location = 'http://www.facebook.com/share.php?u=' + encodeURIComponent(window.location); return false" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+										<li><a href="http://www.linkedin.com/" onclick="window.location = 'http://www.linkedin.com/shareArticle?mini=true&url=' + encodeURIComponent(window.location); return false" class="icon brands fa-linkedin"><span class="label">LInkedIn</span></a></li>
+										<li><a href="mailto:?subject=DDoS&amp;body=" + encodeURIComponent(window.location) class="icon solid fa-envelope"><span class="label">Email</span></a></li>
 									</ul>
+
+
+									<a id="button" part="button" role="button" class="cds--btn cds--btn--secondary cds--btn--lg cds--layout--size-lg cds--btn--icon-only cds-ce--btn--has-icon" href="mailto:?subject=DDoS&amp;body=https://www.ibm.com/think/topics/ddos" target="_blank" type="button">
+										<slot></slot>
+										<slot name="icon"></slot>
+									  </a>
+
 									<header class="major">
 										<h2>Solution Design Notes</h2>
 										<p>A Comprehensive Guide to Building Scalable, Secure, and Reliable Systems</p>
