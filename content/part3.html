@@ -1,2 +1,62 @@
 <h3>Part 3: Security, Observability, and Monitoring</h3>
-<p>coming</p>
+
+<h4>Data Security</h4>
+<p>Protecting sensitive data is a cornerstone of modern system design, ensuring compliance with regulatory standards and mitigating risks.</p>
+<ul>
+  <li><strong>Data encryption techniques:</strong> Encrypting data both at rest and in transit using algorithms like AES-256 ensures data remains secure against unauthorized access.</li>
+  <li><strong>Authentication and authorization:</strong> Implement robust mechanisms such as OAuth for delegated access, JWT for stateless session management, and RBAC or ABAC to enforce granular permissions based on roles or attributes.</li>
+  <li><strong>Vulnerability assessment and penetration testing:</strong> Regularly evaluate systems to identify and fix potential security risks using automated tools and ethical hacking practices.</li>
+  <li><strong>DoS and DDoS protection:</strong> Use rate limiting, IP blacklisting, and specialized tools like AWS Shield to defend against attacks that disrupt service availability.</li>
+</ul>
+
+<h4>Identity and Access Management (IAM)</h4>
+<p>Securely managing user identities and access to resources is critical to safeguarding systems against unauthorized actions.</p>
+<ul>
+  <li><strong>Managing user identities:</strong> Centralize identity management with directory services like Active Directory or cloud solutions like AWS IAM.</li>
+  <li><strong>Principle of least privilege:</strong> Ensure users and systems only have the minimum access necessary to perform their tasks, reducing the attack surface in case of breaches.</li>
+</ul>
+
+<h4>Security Information and Event Management (SIEM)</h4>
+<p>Modern systems require centralized tools to monitor, analyze, and respond to security threats effectively.</p>
+<ul>
+  <li><strong>Centralized monitoring:</strong> Aggregate logs and events from multiple sources to gain visibility into potential security incidents.</li>
+  <li><strong>Threat detection:</strong> Use SIEM tools like Splunk or Azure Sentinel to analyze patterns, detect anomalies, and trigger incident response workflows.</li>
+</ul>
+
+<h4>Zero Trust Architecture</h4>
+<p>Adopt a “never trust, always verify” security model to mitigate threats from both external attackers and insider vulnerabilities.</p>
+<ul>
+  <li><strong>Continuous verification:</strong> Ensure every access request is authenticated and authorized in real time, regardless of whether it originates from inside or outside the network.</li>
+  <li><strong>Micro-segmentation:</strong> Limit the impact of breaches by dividing the network into small, isolated segments and enforcing strict access controls between them.</li>
+</ul>
+
+<h4>Observability</h4>
+<p>Understanding system behavior is key to ensuring reliability, performance, and identifying root causes of issues.</p>
+<ul>
+  <li><strong>Centralized logging:</strong> Implement systems like the ELK stack (Elasticsearch, Logstash, Kibana) to aggregate and analyze logs for troubleshooting and auditing.</li>
+  <li><strong>Metrics collection:</strong> Monitor performance indicators like latency, throughput, and error rates using tools such as Prometheus and Grafana.</li>
+  <li><strong>Distributed tracing:</strong> Use Jaeger or Zipkin to trace requests across services, uncovering bottlenecks and dependencies in complex systems.</li>
+  <li><strong>Alerts and anomaly detection:</strong> Configure proactive alerting systems to notify teams of unusual activity or critical performance thresholds.</li>
+</ul>
+
+<h4>Monitoring and Alerting</h4>
+<p>Effective monitoring ensures issues are identified and resolved before they impact users.</p>
+<ul>
+  <li><strong>Real User Monitoring (RUM):</strong> Track the performance and experience of actual users interacting with your system.</li>
+  <li><strong>Synthetic monitoring:</strong> Simulate user interactions to detect issues in critical workflows even before users encounter them.</li>
+  <li><strong>AI-powered detection:</strong> Employ machine learning models to identify anomalies in system behavior that might indicate emerging issues.</li>
+</ul>
+
+<h4>Chaos Engineering</h4>
+<p>Proactively test system resilience by simulating failures in controlled environments.</p>
+<ul>
+  <li><strong>Deliberate fault injection:</strong> Introduce scenarios like network latency or service outages to evaluate the system’s ability to recover gracefully.</li>
+  <li><strong>Improving system robustness:</strong> Identify weaknesses in the architecture and implement measures to make systems more resilient.</li>
+</ul>
+
+<h4>Supply Chain Security</h4>
+<p>Protecting the software development lifecycle is essential to prevent vulnerabilities from entering production systems.</p>
+<ul>
+  <li><strong>Secure CI/CD pipelines:</strong> Automate and secure the build and deployment processes, integrating tools for static code analysis and vulnerability scanning.</li>
+  <li><strong>Software Bill of Materials (SBOM):</strong> Maintain a comprehensive list of all components in your software, including open-source dependencies, to manage risks effectively.</li>
+</ul>
