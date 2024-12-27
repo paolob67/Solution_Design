@@ -14,8 +14,10 @@
 <p>Consistency models define how data is viewed across a distributed system. Strong consistency ensures all nodes reflect the same data, suitable for applications needing immediate correctness. Eventual consistency allows temporary divergence, favoring availability in low-latency systems. Causal consistency tracks dependencies between operations, offering a balance for some scenarios.</p>
 <p>The CAP theorem highlights trade-offs between consistency, availability, and partition tolerance. Understanding these trade-offs helps architects select the best model for their application's requirements.</p>
 
-<h4>Data Replication and High Availability</h4>
-<p>Replication enhances data availability and fault tolerance. Primary-secondary (leader-follower) configurations synchronize writes to the leader and distribute reads to followers, optimizing performance. Multi-region replication provides global availability and disaster recovery capabilities, ensuring minimal downtime.</p>
+<h4>Data Replication, Backup Strategies, and High Availability</h4> 
+<p>Replication enhances data availability and fault tolerance. Primary-secondary (leader-follower) configurations synchronize writes to the leader and distribute reads to followers, optimizing performance. Multi-region replication provides global availability and disaster recovery capabilities, ensuring minimal downtime.</p> 
+<p>Backup strategies are a critical component of robust data management. Regular, automated backups—whether incremental, differential, or full—ensure that data can be restored quickly in case of corruption or accidental deletion. Cloud-based backups offer scalability and geographic redundancy, minimizing the risk of data loss due to localized failures.</p> 
+<p>Disaster recovery planning goes beyond backups. It involves defining recovery point objectives (RPOs) and recovery time objectives (RTOs) to align with business needs. Leveraging cold, warm, or hot standby architectures ensures organizations can restore operations efficiently in the event of a failure.</p> 
 <p>Minimizing replication lag is crucial for real-time applications. Techniques like write-ahead logging and efficient network protocols help ensure data consistency and reduce delays.</p>
 
 <h4>Data Warehousing and Data Lakes</h4>
