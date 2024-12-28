@@ -5,143 +5,171 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>Solution Design Notes</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<meta name="author" content="Paolo Bianchini">
 
-		<meta name="twitter:site" content="https://paolob67.github.io/Solution_Design" data-react-helmet="true">
+<head>
+	<title>Solution Design Notes</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<meta name="author" content="Paolo Bianchini">
 
-		<meta property="og:site_name" content="Solution Design Notes">
-		<meta property="og:title" content="Solution Design Notes">
-		<meta property="og:image" content="https://paolob67.github.io/Solution_Design/images/banner.jpg">
-		<meta property="og:type" content="website">
-		<meta property="og:description" content="A comprehensive guide to the key concepts and best practices in system design. This document will delve into a wide range of topics, from foundational data principles to advanced architectural patterns and operational considerations.">
-		<meta property="og:url" content="https://paolob67.github.io/Solution_Design">
-		<meta property="og:locale" content="en">
-	</head>
-	<body class="is-preload">
+	<meta name="twitter:site" content="https://paolob67.github.io/Solution_Design" data-react-helmet="true">
 
-		<!-- Header -->
-			<section id="header">
-				<header>
-					<span class="image avatar"><img src="images/avatar.jpg" alt="" /></span>
-					<h1 id="logo"><a href="#">Paolo Bianchini</a></h1>
-					<p> Open Certified Distinguished Architect<br />
-					Cloud Solution Architect</p>
-				</header>
-				<nav id="nav">
-					<ul>
-						<li><a href="#one" class="active">Preface</a></li>
-						<li><a href="#two">Foundational Data Principles</a></li>
-						<li><a href="#three">Caching, Load Balancing, and Distributed Systems</a></li>
-						<li><a href="#four">Security, Observability, and Monitoring</a></li>
-						<li><a href="#five">Microservices Architecture and DevOps Practices</a></li>
-						<li><a href="#six">Cost Optimization and High-Performance Architectures</a></li>
-					</ul>
-				</nav>
-				<footer>
+	<meta property="og:site_name" content="Solution Design Notes">
+	<meta property="og:title" content="Solution Design Notes">
+	<meta property="og:image" content="https://paolob67.github.io/Solution_Design/images/banner.jpg">
+	<meta property="og:type" content="website">
+	<meta property="og:description"
+		content="A comprehensive guide to the key concepts and best practices in system design. This document will delve into a wide range of topics, from foundational data principles to advanced architectural patterns and operational considerations.">
+	<meta property="og:url" content="https://paolob67.github.io/Solution_Design">
+	<meta property="og:locale" content="en">
+</head>
+
+<body class="is-preload">
+
+	<!-- Header -->
+	<section id="header">
+		<header>
+			<span class="image avatar"><img src="images/avatar.jpg" alt="" /></span>
+			<h1 id="logo"><a href="#">Paolo Bianchini</a></h1>
+			<p> Open Certified Distinguished Architect<br />
+				Cloud Solution Architect</p>
+		</header>
+		<nav id="nav">
+			<ul>
+				<li><a href="#preface" class="active">Preface</a></li>
+				<li><a href="#one">Foundational Data Principles</a></li>
+				<li><a href="#two">Caching, Load Balancing, and Distributed Systems</a></li>
+				<li><a href="#three">Security, Observability, and Monitoring</a></li>
+				<li><a href="#four">Microservices Architecture and DevOps Practices</a></li>
+				<li><a href="#five">Cost Optimization and High-Performance Architectures</a></li>
+				<li><a href="#six">User Interface</a></li>
+				<li><a href="#seven">Cloud and Containers</a></li>
+			</ul>
+		</nav>
+		<footer>
+			<ul class="icons">
+				<!--
+				<li><a href="#" class="icon brands fa-x-twitter"><span class="label">Twitter</span></a></li>
+				<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+				<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+				<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+				-->
+				<li><a href="https://www.linkedin.com/in/paolobianchini" class="icon brands fa-linkedin"><span
+							class="label">LinkedIn</span></a></li>
+				<li><a href="https://github.com/paolob67/Solution_Design" class="icon brands fa-github"><span
+							class="label">Github</span></a></li>
+			</ul>
+		</footer>
+	</section>
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Main -->
+		<div id="main">
+
+			<!-- Preface -->
+			<section id="preface">
+				<div class="image main" data-position="center">
+					<img src="images/banner.jpg" alt="" />
+				</div>
+				<div class="container">
+					<!-- social media share buttons -->
 					<ul class="icons">
-						<!--
-						<li><a href="#" class="icon brands fa-x-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-						-->
-						<li><a href="https://www.linkedin.com/in/paolobianchini" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-						<li><a href="https://github.com/paolob67/Solution_Design" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href="http://twitter.com/"
+								onclick="window.location = 'http://twitter.com/intent/tweet?text=Solution Design Notes&url=' + encodeURIComponent(window.location); return false"
+								class="icon brands fa-x-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="http://www.facebook.com/"
+								onclick="window.location = 'http://www.facebook.com/share.php?t= Solution Design Notes&u=' + encodeURIComponent(window.location); return false"
+								class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+						<li><a href="http://www.linkedin.com/"
+								onclick="window.location = 'https://www.linkedin.com/sharing/share-offsite/?url=' + encodeURIComponent(window.location); return false"
+								class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="mailto:?subject=DDoS&amp;body=Check this out https://paolob67.github.io/Solution_Design"
+								class="icon solid fa-envelope"><span class="label">Email</span></a></li>
 					</ul>
-				</footer>
+					<header class="major">
+						<h2>Solution Design Notes</h2>
+						<p>A Comprehensive Guide to Building Scalable, Secure, and Reliable Systems</p>
+					</header>
+					<div w3-include-html="./content/preface.html"></div>
+				</div>
 			</section>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+			<!-- One -->
+			<section id="one">
+				<div class="container">
+					<div w3-include-html="./content/part1.html"></div>
+				</div>
+			</section>
 
-				<!-- Main -->
-					<div id="main">
+			<!-- Two -->
+			<section id="two">
+				<div class="container">
+					<div w3-include-html="./content/part2.html"></div>
+				</div>
+			</section>
 
-						<!-- One -->
-							<section id="one">
-								<div class="image main" data-position="center">
-									<img src="images/banner.jpg" alt="" />
-								</div>
-								<div class="container">
-									<!-- social media share buttons -->
-									<ul class="icons">
-										<li><a href="http://twitter.com/" onclick="window.location = 'http://twitter.com/intent/tweet?text=Solution Design Notes&url=' + encodeURIComponent(window.location); return false" class="icon brands fa-x-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="http://www.facebook.com/" onclick="window.location = 'http://www.facebook.com/share.php?t= Solution Design Notes&u=' + encodeURIComponent(window.location); return false" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<li><a href="http://www.linkedin.com/" onclick="window.location = 'https://www.linkedin.com/sharing/share-offsite/?url=' + encodeURIComponent(window.location); return false" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>											
-										<li><a href="mailto:?subject=DDoS&amp;body=Check this out https://paolob67.github.io/Solution_Design" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-									</ul>
-									<header class="major">
-										<h2>Solution Design Notes</h2>
-										<p>A Comprehensive Guide to Building Scalable, Secure, and Reliable Systems</p>
-									</header>
-									<div w3-include-html="./content/preface.html"></div>
-								</div>
-							</section>
+			<!-- Three -->
+			<section id="three">
+				<div class="container">
+					<div w3-include-html="./content/part3.html"></div>
+				</div>
+			</section>
 
-						<!-- Two -->
-							<section id="two">
-								<div class="container">
-									<div w3-include-html="./content/part1.html"></div>
-								</div>
-							</section>
+			<!-- Four -->
+			<section id="four">
+				<div class="container">
+					<div w3-include-html="./content/part4.html"></div>
+				</div>
+			</section>
 
-						<!-- Three -->
-						<section id="three">
-							<div class="container">
-								<div w3-include-html="./content/part2.html"></div>
-							</div>
-						</section>
+			<!-- Five -->
+			<section id="five">
+				<div class="container">
+					<div w3-include-html="./content/part5.html"></div>
+				</div>
+			</section>
 
-						<!-- Four -->
-						<section id="four">
-							<div class="container">
-								<div w3-include-html="./content/part3.html"></div>
-							</div>
-						</section>
+			<!-- Five -->
+			<section id="six">
+				<div class="container">
+					<div w3-include-html="./content/part6.html"></div>
+				</div>
+			</section>
 
-						<!-- Five -->
-						<section id="five">
-							<div class="container">
-								<div w3-include-html="./content/part4.html"></div>
-							</div>
-						</section>
+			<!-- Five -->
+			<section id="seven">
+				<div class="container">
+					<div w3-include-html="./content/part7.html"></div>
+				</div>
+			</section>
+		</div>
 
-						<!-- Six -->
-						<section id="six">
-							<div class="container">
-								<div w3-include-html="./content/part5.html"></div>
-							</div>
-						</section>
-					
-
-					</div>
-
-				<!-- Footer -->
-					<section id="footer">
-						<div class="container">
-							<ul class="copyright">
-								<li>&copy;2024-25 Paolo Bianchini. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-							</ul>
-						</div>
-					</section>
-					
-
+		<!-- Footer -->
+		<section id="footer">
+			<div class="container">
+				<ul class="copyright">
+					<li>&copy;2024-25 Paolo Bianchini. All rights reserved.</li>
+					<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
 			</div>
+		</section>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/includehtml.js"></script>
-			<script src="assets/js/main.js"></script>
 
-	</body>
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/includehtml.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
 </html>
