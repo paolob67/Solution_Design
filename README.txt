@@ -1,3 +1,19 @@
+This is the repository site for my Solution Design Notes pubblication.
+
+This idea is to gather some knowledge about designing systems in a single place.
+
+You are free to copy, reuse and suggest improvements. Just open an isssue or submit a pull request.
+
+I'll figure out way to give credit to whoever wants to contribute.
+
+Read belowofr credits about the design template used with some minor tweaks,
+
+Thanks
+
+PB
+
+---
+
 Read Only by HTML5 UP
 html5up.net | @ajlkn
 Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
