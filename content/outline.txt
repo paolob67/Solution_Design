@@ -144,13 +144,12 @@
     1.  IaaS, PaaS, SaaS
     2.  Cloud Providers (IBM Cloud)
     3.  Cloud Migration Strategies
-2.  **Containerization Deep Dive**
+2.  **Container Orchestration**
     1.  Dockerfile Best Practices
     2.  Container Networking
     3.  Container Security (Image Scanning, Runtime Security)
-3.  ** Container Orchestration
-    1. Automating management and scaling
-    2. Platforms and benefits
+    4.  Automating management and scaling
+    5.  Platforms and benefits
 4.  **Kubernetes Concepts**
     1.  Deployments, Services, Pods
     2.  Namespaces, Labels, Selectors
