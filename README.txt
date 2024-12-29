@@ -48,3 +48,18 @@ Credits:
 		jQuery (jquery.com)
 		Scrollex (github.com/ajlkn/jquery.scrollex)
 		Responsive Tools (github.com/ajlkn/responsive-tools)
+
+---
+
+Credits:
+
+Image Dialog jQuery Plugin
+
+About the Plugin
+The Image Dialog jQuery Plugin is a simple lightweight plugin (1.7 KB) for viewing an 
+image in a modal dialog box. It does not require any CSS to function although extra 
+styling can be applied if desired. It behaves in a responsive manner if the browser size, 
+scroll position or orientation changes, to see this in action resize your browser when the 
+image dialog is open.
+
+https://declanbright.com/jquery-plugin-image-dialog
