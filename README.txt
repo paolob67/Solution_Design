@@ -1,4 +1,5 @@
-This is the repository site for my Solution Design Notes pubblication.
+This is the repository site for my Solution Design Notes pubblication
+available here: https://paolob67.github.io/Solution_Design/
 
 This idea is to gather some knowledge about designing systems in a single place.
 
