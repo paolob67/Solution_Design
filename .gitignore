@@ -1,2 +1,3 @@
 .DS_Store
-images/.$map.drawio.bkp
+*.bkp
+*.dtmp
