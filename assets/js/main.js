@@ -159,10 +159,21 @@
 
 	// Image viewer
 	$(document).ready(function () {
-		$('.image-dialog-class')
-			.imageDialog()
-			.append('click to enlarge');
-
+		setTimeout(updateImages, 100);  // wait 100 ms and try
 	});
+
+	updateImages = function () {
+		console.log("update images");
+		$toInclude = $('[w3-include-html]');
+		if ($toInclude.length == 0) {
+			$('.image-dialog-class')
+				.imageDialog()
+				.append('click to enlarge');
+		} else {
+			setTimeout(updateImages, 100); // wait 100 ms and try
+		}
+	}
+
+
 
 })(jQuery);
