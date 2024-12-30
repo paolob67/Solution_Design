@@ -28,15 +28,17 @@
 
 <h4>Data Storage and Retrieval</h4>
 
-<span class="image fit image-dialog-class" data-full-img="images/images-sharding.png">
-    <img src="images/images-sharding.png" alt="DB partitioning and sharding" />
-</span>
-<p>To effectively manage large datasets, partitioning strategies are essential. Vertical partitioning, which involves
+<p>
+    <span class="image left image-dialog-class" data-full-img="images/images-sharding.png">
+        <img src="images/images-sharding-tn.png" alt="DB partitioning and sharding" />
+    </span>
+    To effectively manage large datasets, partitioning strategies are essential. Vertical partitioning, which involves
     splitting data by columns, can improve performance by reducing the amount of data accessed for specific queries.
     However, horizontal partitioning, or sharding, is often more critical for scalability. By distributing data across
     multiple nodes based on a specific key, sharding enables systems to handle massive datasets without compromising
     performance. This is particularly crucial when dealing with geographically distributed data, as sharding can improve
-    local read and write performance by placing data closer to the end-users.</p>
+    local read and write performance by placing data closer to the end-users.
+</p>
 
 <p>Efficient data retrieval relies heavily on effective indexing. Primary indexes provide direct access to records based
     on the primary key, while secondary indexes enable efficient queries on non-key attributes. Covering indexes further
